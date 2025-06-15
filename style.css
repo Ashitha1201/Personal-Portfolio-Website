@@ -1,0 +1,389 @@
+
+
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+
+    background-color:#4b5874;
+    width: 15vw;
+    transition: transform 0.3s ease-in;
+    height: 100vh;
+    position: absolute;
+}
+
+.sidebar nav {
+    padding: 45px;
+        margin-left: 1px;
+
+}
+
+.sidebar nav li {
+   padding:10px;
+font-size:25px;
+    list-style: none;   
+         margin-left:-40px;
+
+font: bold;
+
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: white;
+        font-family: 'Poppins', sans-serif;
+
+}
+
+.main {
+    background-color:#929fb3;
+    width: 1335vw;
+    height:100vh;
+}
+
+.container {
+    display: flex;
+
+}
+
+.infoContainer {
+    
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+font-size:16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.devPic img {
+    height: 58vh;
+    width: 20vw;
+
+
+
+}
+
+.Hello {
+    font-size:36px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.name {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about {
+    font-size:2.5em;
+      font-family: 'Poppins', sans-serif;
+
+}
+
+.buttons {
+    margin-top: 2.2em;
+    font-size: 16px;
+}
+
+.moreabout {
+    font-size: 2emx;
+    margin-top: 23px;
+          font-family: 'Poppins', sans-serif;
+
+}
+
+.btn{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color:white;
+    background-color:dodgerblue;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 3px 3px;
+    cursor: pointer;
+
+}
+.btn:hover{
+     color:dodgerblue;
+    background-color:white;
+}
+.btn-sn{
+     font-size: 14px;
+     padding:10px 19px;
+     margin:12px 0;
+}
+.contactform{
+
+
+padding: 0 34px;
+margin:10px 88px;
+  font-family: 'Poppins', sans-serif;
+
+}
+.contactform h1{
+font-family: 'Roboto', sans-serif;
+padding:12px 0;
+}
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+#emailHelp{
+font-size:14px;
+color: midnightblue;
+margin:0 5px;
+}
+.contactform form div input{
+    /*width:23vw;*/
+    border-radius:5px;
+    margin:4px;
+    padding: 3px;
+}
+
+.contactform form{
+    /*width:23vw;*/
+    
+    margin:0 40px;
+    
+}
+#form-check{
+    flex-direction: row;
+}
+#form-check input{
+    width:24px;
+    margin: 3px 0px;
+
+}
+.blogItem {
+      margin:1px 88px;
+
+       
+}
+.blogContainer{
+    margin:88px;
+
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+     margin: 20px 88px;
+     font-size:1em;
+
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+
+}
+p{
+     
+  font-family: 'Poppins', sans-serif;
+         margin:10px 88px;
+
+
+}
+.intro{
+    margin:  88px;
+}
+.intro h1{
+     font-family: 'Roboto', sans-serif;
+     margin: -39px 1px;
+     font-size: 1em;
+
+}
+.intro h3{
+     font-family: 'Roboto', sans-serif;
+     margin-top:-10px;
+
+}
+.intro li{
+     font-family: 'Poppins', sans-serif;
+     margin:12px;
+     margin-left: 43px;
+
+}
+.intro p{
+ font-family: 'Poppins', sans-serif;
+      margin:39px;
+
+}
+.Educations{
+    margin-top:5px;
+
+}
+a.Education{
+    color: skyblue;
+}
+
+
+.Educations h3{
+     font-family: 'Roboto', sans-serif;
+     margin:-31px;
+
+}
+.Hobbies{
+    margin-top:5px;
+}
+.Hobbies h3{
+     font-family: 'Roboto', sans-serif;
+     margin:11px -3px;
+
+}
+
+
+
+.skillContainer{
+margin:auto;
+padding: 20px;
+
+}
+.skillgroup{
+    margin-bottom: 30px;
+}
+.skillgroup h3{
+    padding-bottom:5px;
+    font-family: 'Roboto', sans-serif;
+}
+.skill{
+    margin:10px 0;
+}
+ .bar{
+    background-color:whitesmoke;
+    height:10px;
+    margin-top: 5px;
+    margin-left: 150px;
+    width:264px;
+ }
+ .bar-fill{
+     background-color:darkslateblue;
+    height:10px;
+    margin-top: 5px;
+ }
+.sidebarGo{
+        transform: translate(-443px,0px);
+}
+@media (max-width:1012px){
+    *{
+   /* background-color:red;*/
+    }
+.devPic{
+    display:none;
+}
+/*.sidebar{
+    position: absolute;
+        transform: translate(-443px,0px);
+}*/
+}
+
+.menubar{
+    position:absolute;
+    cursor:pointer;
+    top:10px;
+    left:10px;
+}
+.menu{
+    margin-top:10px;
+    margin-left: 10px;
+}
+.cross{
+    margin-left:157px;
+    cursor: pointer;
+        margin-top: 10px;
+}
+
+.skillgroup h3{
+    margin-left:120px;
+    font-family: 'Roboto', sans-serif;
+}
+.skillContainer h2{
+
+     text-align:center;
+    margin:20px 121px;
+    font-family: 'Roboto', sans-serif;
+   
+}
+.skill{
+    margin: 10px 0;
+}
+.skillname{
+     margin-top: 5px;
+    margin-left: 150px;
+    font: bold;
+}
+.Certifications{
+    padding:30px;
+   
+         
+
+}
+.Certifications h2{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color:black;
+        margin:10px 88px;
+        font-family: 'Roboto', sans-serif;
+
+}
+.cert-card{
+    color:black;
+    padding:20px;
+margin-bottom: 15px;
+border-radius: 10px;
+margin:10px 88px;
+}
+.cert-card h3{
+    font-family: 'Roboto', sans-serif;
+    color:black;
+}
+.cert-card a{
+   
+    text-decoration: none;
+    font-weight: bold;
+      font-family: 'Poppins', sans-serif;
+
+}
+.project{
+      margin:1px 88px;
+        font-family: 'Roboto', sans-serif;
+
+       
+}
+.p{
+       font-family: 'Poppins', sans-serif;
+         margin:10px 88px;
+
+
+}
+.projectss{
+     margin:6px -1px;
+        font-family: 'Roboto', sans-serif;
+
+}
+.projectContainer{
+    margin:88px;
+
+}
+.projectContainer h1{font-family: 'Roboto', sans-serif;
+     margin: 28px 57px;
+     font-size:2em;
+
+}
+
+
+   
+              
