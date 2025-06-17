@@ -39,19 +39,22 @@ font: bold;
 
 .main {
     background-color:#929fb3;
-    width: 1335vw;
-    height:100vh;
+    width:100%;
+    height:100%;
+    display: flex;
 }
 
 .container {
-    display: flex;
+    
+    height:127vh;
+    width: 100%;
 
 }
 
 .infoContainer {
     
-    height: 58vh;
-    width: 80vw;
+    height:100vh;
+    width: 100%;
     margin: 144px auto;
     margin-top: 90px;
     display: flex;
@@ -245,7 +248,7 @@ a.Education{
 
 
 .skillContainer{
-margin:auto;
+
 padding: 20px;
 
 }
@@ -309,7 +312,7 @@ padding: 20px;
 }
 .skillContainer h2{
 
-     text-align:center;
+  
     margin:20px 121px;
     font-family: 'Roboto', sans-serif;
    
@@ -319,7 +322,7 @@ padding: 20px;
 }
 .skillname{
      margin-top: 5px;
-    margin-left: 150px;
+    margin-left: 200px;
     font: bold;
 }
 .Certifications{
