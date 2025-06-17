@@ -5,9 +5,9 @@
 }
 
 .sidebar {
-
+position:fixed;
     background-color:#4b5874;
-    width: 15vw;
+    width: 250px;
     transition: transform 0.3s ease-in;
     height: 100vh;
     position: absolute;
