@@ -2,6 +2,7 @@
 
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .sidebar {
@@ -10,21 +11,19 @@ position:fixed;
     width: 250px;
     transition: transform 0.3s ease-in;
     height: 100vh;
-    position: absolute;
 }
 
 .sidebar nav {
-    padding: 45px;
-        margin-left: 1px;
+    padding: 45px 20px;
 
 
 }
 
 .sidebar nav li {
    padding:10px;
-font-size:25px;
+font-size:22px;
     list-style: none;   
-         margin-left:-40px;
+         
 
 font: bold;
 
@@ -34,64 +33,65 @@ font: bold;
     text-decoration: none;
     color: white;
         font-family: 'Poppins', sans-serif;
+        display: block;
 
 }
 
 .main {
     background-color:#929fb3;
-    width:100%;
-    height:100%;
-    display: flex;
+   margin-left:0;
+   width:100%;
+    padding: 10px;
 }
 
 .container {
     
-    height:127vh;
-    width: 100%;
+    min-height: 100vh;
+    width:100%;
+    display: flex;
+    flex-direction: row;
 
 }
 
 .infoContainer {
-    
-    height:100vh;
-    width: 100%;
-    margin: 144px auto;
-    margin-top: 90px;
+   align-items: center;
+   flex-wrap: wrap;
+   width: 100%;
+    margin-top: 80px;
     display: flex;
     justify-content: space-around;
 }
 
 .devInfo {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    
 font-size:16px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
+    flex: 1 1 300px;
+    padding:20px;
 }
 
 .devPic img {
-    height: 58vh;
-    width: 20vw;
-
-
-
+    height: auto;
+    max-width:20vw;
+    border-radius: 20px;
+    margin: 20px;
 }
 
 .Hello {
-    font-size:36px;
+    font-size:30px;
     font-family: 'Roboto', sans-serif;
 }
 
 .name {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
 }
 
 .about {
-    font-size:2.5em;
+    font-size:1.8em;
       font-family: 'Poppins', sans-serif;
 
 }
@@ -102,21 +102,24 @@ font-size:16px;
 }
 
 .moreabout {
-    font-size: 2emx;
-    margin-top: 23px;
+    font-size: 1.5em;
+    margin-top: 15px;
           font-family: 'Poppins', sans-serif;
 
 }
-
+.buttons{
+    margin-top: 20px;
+}
 .btn{
-    padding: 9px 14px;
+    padding: 10px 20px;
     border-radius: 22px;
+    border: none;
     color:white;
     background-color:dodgerblue;
     font-weight: bold;
     font-size: 1em;
-    margin: 3px 3px;
     cursor: pointer;
+    
 
 }
 .btn:hover{
@@ -250,6 +253,9 @@ a.Education{
 .skillContainer{
 
 padding: 20px;
+width:59%;
+min-height: 100%;
+box-sizing: border-box;
 
 }
 .skillgroup{
@@ -267,43 +273,92 @@ padding: 20px;
     height:10px;
     margin-top: 5px;
     margin-left: 150px;
-    width:264px;
+    width:100%;
+    max-width: 400px;
+    overflow: hidden;
  }
  .bar-fill{
      background-color:darkslateblue;
     height:10px;
     margin-top: 5px;
- }
+    width:100%;
+ 
+}
+
 .sidebarGo{
         transform: translate(-443px,0px);
 }
-@media (max-width:1012px){
-    *{
-   /* background-color:red;*/
-    }
+@media (max-width:768px){
+   .skillContainer {
+    padding: 15px;
+}
+.bar{
+    height: 10px;
+}
+.bar-fill{
+    width: 100%;
+}
 .devPic{
-    display:none;
+    display: none;
 }
 /*.sidebar{
     position: absolute;
-        transform: translate(-443px,0px);
+    height: 100vh;
+    transform: translateX(-100%);
+}
+.main{
+    margin-left: 0;
+    padding: 10px;
+}
+/*.menubar{
+    z-index: 1100;
+    position: fixed;
+}
+.infoContainer{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+.devinfo,.devPic{
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+}
+.devpic img{
+    width: 80%;
+    height: auto;
+}
+.about, .moreabout{
+    font-size: 1.em;
+}
+.btn{
+    width: 80%;
+    font-size: 1em;
 }*/
 }
 
+
 .menubar{
+   
     position:absolute;
     cursor:pointer;
     top:10px;
     left:10px;
+    
 }
 .menu{
-    margin-top:10px;
-    margin-left: 10px;
+    width: 30px;
+    cursor: pointer;
+    margin: 10px;
+   display: block;
+   
 }
 .cross{
-    margin-left:157px;
+    width: 30px;
     cursor: pointer;
-        margin-top: 10px;
+    margin: 10px;
+       display: block;
+    margin-left: 199px;
 }
 
 .skillgroup h3{
