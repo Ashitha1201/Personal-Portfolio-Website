@@ -132,16 +132,17 @@ font-size:16px;
      margin:12px 0;
 }
 .contactform{
-
-
-padding: 0 34px;
-margin:10px 88px;
+padding: 20px;
+border-radius: 10px;
+max-width: 500px;
+width:100%;
   font-family: 'Poppins', sans-serif;
 
 }
 .contactform h1{
 font-family: 'Roboto', sans-serif;
-padding:12px 0;
+margin-bottom: 20px;
+font-size:22px;
 }
 .contactform form div{
     padding: 10px 0;
@@ -154,17 +155,12 @@ color: midnightblue;
 margin:0 5px;
 }
 .contactform form div input{
-    /*width:23vw;*/
-    border-radius:5px;
+   border-radius:5px;
     margin:4px;
     padding: 3px;
 }
-
 .contactform form{
-    /*width:23vw;*/
-    
     margin:0 40px;
-    
 }
 #form-check{
     flex-direction: row;
@@ -300,6 +296,12 @@ box-sizing: border-box;
 }
 .devPic{
     display: none;
+}
+.contactform{
+    padding: 15px;
+}
+.contactform h1{
+font-size:18px ;
 }
 /*.sidebar{
     position: absolute;
